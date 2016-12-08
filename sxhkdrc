@@ -119,3 +119,6 @@ XF86AudioRaiseVolume
 
 XF86AudioMicMute
 	amixer set Master toggle
+
+
+
