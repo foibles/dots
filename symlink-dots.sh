@@ -3,7 +3,6 @@
  # move old dots
  mv ~/.bashrc ~/.old-dots/.bashrc ;
  mv ~/.fehbg ~/.old-dots/.fehbg ;
- mv ~/.gitconfig ~/.old-dots/.gitconfig ;
  mv ~/.gitignore ~/.old-dots/.gitignore ;
  mv ~/.vimrc ~/.old-dots/.vimrc ;
  mv ~/.xinitrc ~/.old-dots/.xinitrc ;
@@ -14,7 +13,6 @@
  # symlink new dots
  ln -s ~/Dots/.bashrc ~/.bashrc ;
  ln -s ~/Dots/.fehbg ~/.fehbg ;
- ln -s ~/Dots/.gitconfig ~/.gitconfig ;
  ln -s ~/Dots/.gitignore ~/.gitignore ;
  ln -s ~/Dots/.vimrc ~/.vimrc ;
  ln -s ~/Dots/.xinitrc ~/.xinitrc ;

@@ -5,7 +5,7 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-export PATH="${PATH}:/home/foibles/Drive/Development/Scripts:/home/foibles/.gem/ruby/2.3.0/bin"
+export PATH="${PATH}:/home/foibles/Scripts/:/home/foibles/.gem/ruby/2.3.0/bin"
 
 # merge in defaults and keymaps
 

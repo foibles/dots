@@ -12,12 +12,12 @@ fi
 
 ZSH="$HOME/.config/zsh"
 PLUGINS="$ZSH/plugins"
-CUSTOM="$ZSH/custom"
+# CUSTOM="$ZSH/custom"
 
 # add --user-install ruby gems to PATH
-if which ruby >/dev/null && which gem >/dev/null; then
-  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
-fi
+#if which ruby >/dev/null && which gem >/dev/null; then
+#  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"
+# fi
 
 # initialize colors and completion
 autoload -U compinit promptinit colors
@@ -154,5 +154,5 @@ fi
 
 # plugins / scripts
 # source $CUSTOM/git-prompt.zsh # better/faster git prompt than the oh-my-zsh plugin
-source $CUSTOM/aliases.zsh    # all aliases in one place
+# source $CUSTOM/aliases.zsh    # all aliases in one place
 # source $PLUGINS/history-substring-search/history-substring-search.zsh
