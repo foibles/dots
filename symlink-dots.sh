@@ -12,15 +12,15 @@
  mv ~/.zshrc ~/.old-dots/.zshrc ;
 
  # symlink new dots
- ln -s $dir/.bashrc ~/.bashrc ;
- ln -s $dir/.fehbg ~/.fehbg ;
- ln -s $dir/.gitconfig ~/.gitconfig ;
- ln -s $dir/.gitignore ~/.gitignore ;
- ln -s $dir/.vimrc ~/.vimrc ;
- ln -s $dir/.xinitrc ~/.xinitrc ;
- ln -s $dir/.Xresources ~/.Xresources ;
- ln -s $dir/.zprofile ~/.zprofile ;
- ln -s $dir/.zshrc ~/.zshrc ;
+ ln -s ~/Dots/.bashrc ~/.bashrc ;
+ ln -s ~/Dots/.fehbg ~/.fehbg ;
+ ln -s ~/Dots/.gitconfig ~/.gitconfig ;
+ ln -s ~/Dots/.gitignore ~/.gitignore ;
+ ln -s ~/Dots/.vimrc ~/.vimrc ;
+ ln -s ~/Dots/.xinitrc ~/.xinitrc ;
+ ln -s ~/Dots/.Xresources ~/.Xresources ;
+ ln -s ~/Dots/.zprofile ~/.zprofile ;
+ ln -s ~/Dots/.zshrc ~/.zshrc ;
 
  # move old configs
  mv ~/.config/bspwm/bspwmrc ~/.old-dots/bspwmrc ;
@@ -31,8 +31,8 @@
 
 
  # symlink old configs
- ln -s $dir/bspwmrc ~/.config/bspwm/bspwmrc ;
- ln -s $dir/sxhkdrc ~/.config/sxhkd/sxhkdrc ;
- ln -s $dir/tint2rc ~/.config/tint2/tint2rc ;
- ln -s $dir/compton.conf ~/.config/compton.conf ;
- ln -s $dir/rc.conf ~/.config/ranger/rc.conf ;
+ ln -s ~/Dots/bspwmrc ~/.config/bspwm/bspwmrc ;
+ ln -s ~/Dots/sxhkdrc ~/.config/sxhkd/sxhkdrc ;
+ ln -s ~/Dots/tint2rc ~/.config/tint2/tint2rc ;
+ ln -s ~/Dots/compton.conf ~/.config/compton.conf ;
+ ln -s ~/Dots/rc.conf ~/.config/ranger/rc.conf ;
