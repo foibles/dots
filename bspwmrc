@@ -15,19 +15,25 @@ bspc monitor -d 01 02 03 04 05 06 07 08 09 10
 
 bspc rule -a gimp floating=on
 bspc rule -a URxvtQuake sticky=on floating=on
+bspc rule --add URxvt:scratchpad sticky=on state=floating border=off
+bspc rule --add URxvtiQuake:scratchpad sticky=on state=floating border=off
 bspc rule -a tint2 floating=on manage=off # needed with R675M, window hints previously worked
 
+# autostart
 xsetroot -cursor_name left_ptr &
-hsetroot -fill ~/images/wallpaper.png
-compton --config "$HOME/.config/compton.conf" -b
+hsetroot -fill ~/elephant.jpg
+compton --config "$HOME/.config/compton.conf" --xrender-sync-fence
 udiskie --tray &
 nm-applet &
-numlockx on &
+# numlockx on &
+xset b off &
+volumeicon &
+/usr/local/bin/conkystart.sh
 
 # desktop 10 is the sys monitor workspace
-bspc rule -a URxvtDesktop desktop=^10
-bspc rule -a htop desktop=^10
-bspc config -d ^10 split_ratio 0.80
+bspc rule -a URxvtDesktop desktop=^1
+bspc rule -a htop desktop=^1
+bspc config -d ^1 split_ratio 0.80
 conky -c ~/.config/conky/bspwm.conky &
 urxvt -name URxvtDesktop &
 # sleep to allow terminal to spawn first
@@ -36,10 +42,12 @@ sleep 2 && urxvt -bg '[0]#000000' -name htop -e htop &
 # seems to help if tint2 is started after compton is fully up and running
 #   previous sleep command should allow for that
 tint2 &
+insync &
+redshift &
 
 # seems as if split_ratio takes effect for all desktops
 #   this resets it
 #   sleep is required to allow desktop 10 windows to spawn
 sleep 2 && bspc config -d focused split_ratio 0.50
 
-insync &
+#autostart.sh

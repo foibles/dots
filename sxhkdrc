@@ -8,7 +8,12 @@ super + z
 
 # browser
 super + b
-    google-chrome-stable -kiosk
+    google-chrome-stable
+
+# google keep
+super + k
+  google-chrome-stable --app-id keep.google.com
+
 
 # close window
 super + x
@@ -66,24 +71,17 @@ super + button{1-3}
 super + @button{1-3}
 	bspc pointer -u
 
-# trash restore
-Insert
-	float-trash.sh
+
+
+
 
 # configs
 
-F1
-	cd /home/foibles/Scripts && urxvt -e ranger
-F2
-	cd /home/foibles/Dots && urxvt -e ranger
-
-# open a "scratchpad" terminal (quake-style, in this case, on a 1366x768 display)
+# scratchpad terminal
 F12
   xdotool search --onlyvisible --classname URxvtQuake windowunmap \
     || xdotool search --classname URxvtQuake windowmap \
-    || urxvt -name URxvtQuake -geometry 110x20+297+1
-
-
+    || urxvt -bg '[0]#000000' -name URxvtQuake -geometry 110x20+297+1
 
 
 # some simple notifications in lieu of a systray
@@ -119,6 +117,3 @@ XF86AudioRaiseVolume
 
 XF86AudioMicMute
 	amixer set Master toggle
-
-
-
