@@ -19,35 +19,57 @@ bspc rule --add URxvt:scratchpad sticky=on state=floating border=off
 bspc rule --add URxvtiQuake:scratchpad sticky=on state=floating border=off
 bspc rule -a tint2 floating=on manage=off # needed with R675M, window hints previously worked
 
-# autostart
+# cursor
 xsetroot -cursor_name left_ptr &
-hsetroot -fill ~/elephant.jpg
-compton --config "$HOME/.config/compton.conf" --xrender-sync-fence
+
+# wallpaper
+hsetroot -fill ~/elephant.jpg &
+
+# nice composting
+compton --config "$HOME/.config/compton.conf" --xrender-sync-fence &
+
+# automound flash disks
 udiskie --tray &
+
 nm-applet &
 # numlockx on &
+
+# turn off hardware beep
 xset b off &
+
+# tint2 volume icon
 volumeicon &
-/usr/local/bin/conkystart.sh
+
+# switch caps and escape keys
+setxkbmap -option caps:escape &
+
+# /usr/local/bin/conkystart.sh
 
 # desktop 10 is the sys monitor workspace
-bspc rule -a URxvtDesktop desktop=^1
-bspc rule -a htop desktop=^1
-bspc config -d ^1 split_ratio 0.80
-conky -c ~/.config/conky/bspwm.conky &
-urxvt -name URxvtDesktop &
+# bspc rule -a URxvtDesktop desktop=^1
+# bspc rule -a htop desktop=^1
+# bspc config -d ^1 split_ratio 0.80
+# conky -c ~/.config/conky/bspwm.conky &
+# urxvt -name URxvtDesktop &
 # sleep to allow terminal to spawn first
-sleep 2 && urxvt -bg '[0]#000000' -name htop -e htop &
+# sleep 2 && urxvt -bg '[0]#000000' -name htop -e htop &
 
 # seems to help if tint2 is started after compton is fully up and running
 #   previous sleep command should allow for that
+
+# desktop panel
 tint2 &
-insync &
+      
+# save my eyes
 redshift &
+
+# google drive sync
+insync start &
+
 
 # seems as if split_ratio takes effect for all desktops
 #   this resets it
 #   sleep is required to allow desktop 10 windows to spawn
-sleep 2 && bspc config -d focused split_ratio 0.50
+# sleep 2 && bspc config -d focused split_ratio 0.50
 
-#autostart.sh
+# autostart.sh &
