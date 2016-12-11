@@ -3,6 +3,9 @@
 #
 # yuri - Jul 2014
 
+export PATH="${PATH}:/home/foibles/Scripts/:/home/foibles/.gem/ruby/2.3.0/bin"
+
+
 BROWSER='/usr/bin/google-chrome-stable'
 if [ -n "$WINDOWID" ]; then # this shell is running in X
   EDITOR='/usr/bin/gvim'

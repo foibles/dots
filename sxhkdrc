@@ -12,7 +12,7 @@ super + b
 
 # google keep
 super + k
-  google-chrome-stable --app-id keep.google.com
+  google-chrome-stable --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
 
 
 # close window
