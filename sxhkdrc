@@ -2,6 +2,17 @@
 {XF86PowerOff}
     systemctl poweroff
 
+# umount media
+Insert
+  umount.sh
+
+# brightness
+Home
+  light -A 5%
+
+End
+  light -U 5%
+
 # terminal emulator
 super + z
 	urxvt

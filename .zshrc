@@ -134,26 +134,26 @@ if [ -n "$WINDOWID" ]; then # this shell is running in X
 
   # this dynamically sets the window title of terminal windows
   # it's mostly just an openbox hack, hence the desktop session condition
-  DESKTOPWINDOWID=0
-  if [ -n $WINDOWID ]; then
-    wmctrl -l > /dev/null 2>&1 && DESKTOPWINDOWID=$((`wmctrl -lpx | grep 'URxvtDesktop.URxvt' | awk '{ print $1 }'`))
-  fi
-  if [ $WINDOWID -eq $DESKTOPWINDOWID ]; then
-    print -n "\e]0;URxvtDesktop\a"
+#  DESKTOPWINDOWID=0
+#  if [ -n $WINDOWID ]; then
+ #   wmctrl -l > /dev/null 2>&1 && DESKTOPWINDOWID=$((`wmctrl -lpx | grep 'URxvtDesktop.URxvt' | awk '{ print $1 }'`))
+ # fi
+ # if [ $WINDOWID -eq $DESKTOPWINDOWID ]; then
+  #  print -n "\e]0;URxvtDesktop\a"
     # display system info on the desktop terminal
-    if [ $DESKTOP_SESSION = "openbox" ]; then
-      archey
-    fi
-  else
-    case $TERM in
-      termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
-        precmd () { print -Pn "\e]0;%n@%M:%~\a" } 
-        preexec () { print -Pn "\e]0;%n@%M:%~ ($1)\a" }
-        ;;
-    esac
+   # if [ $DESKTOP_SESSION = "openbox" ]; then
+    #  archey
+  #  fi
+#  else
+ #   case $TERM in
+  #    termite|*xterm*|rxvt|rxvt-unicode|rxvt-256color|rxvt-unicode-256color|(dt|k|E)term)
+   #     precmd () { print -Pn "\e]0;%n@%M:%~\a" } 
+    #    preexec () { print -Pn "\e]0;%n@%M:%~ ($1)\a" }
+     #   ;;
+  #  esac
 
-  fi
-fi
+#  fi
+#fi
 
 # plugins / scripts
  source $CUSTOM/git-prompt.zsh # better/faster git prompt than the oh-my-zsh plugin
