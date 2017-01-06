@@ -12,6 +12,8 @@ bspc config gapless_monocle     true
 bspc config remove_disabled_monitor true
 
 bspc monitor -d 01 02 03 04 05 06 07 08 09 10
+bspc rule -a soffice.bin state=tiled
+bspc rule -a libreoffice state=tiled
 bspc rule -a feh state=fullscreen
 bspc rule -a mpv state=fullscreen
 bspc rule -a URxvtQuake sticky=on state=floating
@@ -21,7 +23,7 @@ bspc rule -a tint2 state=floating manage=off # needed with R675M, window hints p
 xsetroot -cursor_name left_ptr &
 
 # wallpaper
-hsetroot -fill ~/elephant.jpg &
+hsetroot -fill ~/Dots/elephant.jpg &
 
 # nice composting
 compton --config "$HOME/.config/compton.conf" --xrender-sync-fence &

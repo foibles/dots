@@ -17,6 +17,7 @@ ZSH="$HOME/.config/zsh"
 PLUGINS="$ZSH/plugins"
 CUSTOM="$ZSH/custom"
 
+  alias recent='insync get_recent_changes'
 # add --user-install ruby gems to PATH
 #if which ruby >/dev/null && which gem >/dev/null; then
 #  PATH="$(ruby -rubygems -e 'puts Gem.user_dir')/bin:$PATH"

@@ -28,14 +28,14 @@
  mv /home/foible/.config/zsh/custom/git-prompt.zsh /home/foible/.old-dots/git-prompt.zsh ;
 
  # symlink new dots
- ln -s /home/foible/Dots/.bashrc /home/foible/.bashrc ;
- ln -s /home/foible/Dots/.fehbg /home/foible/.fehbg ;
- ln -s /home/foible/Dots/.gitignore /home/foible/.gitignore ;
- ln -s /home/foible/Dots/.vimrc /home/foible/.vimrc ;
- ln -s /home/foible/Dots/.xinitrc /home/foible/.xinitrc ;
- ln -s /home/foible/Dots/.Xresources /home/foible/.Xresources ;
- ln -s /home/foible/Dots/.profile /home/foible/.profile ;
- ln -s /home/foible/Dots/.zshrc /home/foible/.zshrc ;
+ ln -s /home/foible/Dots/bashrc /home/foible/.bashrc ;
+ ln -s /home/foible/Dots/fehbg /home/foible/.fehbg ;
+ ln -s /home/foible/Dots/gitignore /home/foible/.gitignore ;
+ ln -s /home/foible/Dots/vimrc /home/foible/.vimrc ;
+ ln -s /home/foible/Dots/xinitrc /home/foible/.xinitrc ;
+ ln -s /home/foible/Dots/Xresources /home/foible/.Xresources ;
+ ln -s /home/foible/Dots/profile /home/foible/.profile ;
+ ln -s /home/foible/Dots/zshrc /home/foible/.zshrc ;
 
  # symlink old configs
  ln -s /home/foible/Dots/bspwmrc /home/foible/.config/bspwm/bspwmrc ;
