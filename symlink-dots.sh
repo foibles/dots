@@ -28,23 +28,23 @@
  mv /home/foible/.config/zsh/custom/git-prompt.zsh /home/foible/.old-dots/git-prompt.zsh ;
 
  # symlink new dots
- ln -s /home/foible/Dots/bashrc /home/foible/.bashrc ;
- ln -s /home/foible/Dots/fehbg /home/foible/.fehbg ;
- ln -s /home/foible/Dots/gitignore /home/foible/.gitignore ;
- ln -s /home/foible/Dots/vimrc /home/foible/.vimrc ;
- ln -s /home/foible/Dots/xinitrc /home/foible/.xinitrc ;
- ln -s /home/foible/Dots/Xresources /home/foible/.Xresources ;
- ln -s /home/foible/Dots/profile /home/foible/.profile ;
- ln -s /home/foible/Dots/zshrc /home/foible/.zshrc ;
+ ln -s /home/foible/dot/bashrc /home/foible/.bashrc ;
+ ln -s /home/foible/dot/fehbg /home/foible/.fehbg ;
+ ln -s /home/foible/dot/gitignore /home/foible/.gitignore ;
+ ln -s /home/foible/dot/vimrc /home/foible/.vimrc ;
+ ln -s /home/foible/dot/xinitrc /home/foible/.xinitrc ;
+ ln -s /home/foible/dot/Xresources /home/foible/.Xresources ;
+ ln -s /home/foible/dot/profile /home/foible/.profile ;
+ ln -s /home/foible/dot/zshrc /home/foible/.zshrc ;
 
  # symlink old configs
- ln -s /home/foible/Dots/bspwmrc /home/foible/.config/bspwm/bspwmrc ;
- ln -s /home/foible/Dots/sxhkdrc /home/foible/.config/sxhkd/sxhkdrc ;
- ln -s /home/foible/Dots/tint2rc /home/foible/.config/tint2/tint2rc ;
- ln -s /home/foible/Dots/compton.conf /home/foible/.config/compton.conf ;
- ln -s /home/foible/Dots/rc.conf /home/foible/.config/ranger/rc.conf ;
- ln -s /home/foible/Dots/scope.sh /home/foible/.config/ranger/scope.sh ;
- ln -s /home/foible/Dots/rifle.conf /home/foible/.config/ranger/rifle.conf ;
- ln -s /home/foible/Dots/aliases.zsh /home/foible/.config/zsh/custom/aliases.zsh ;
- ln -s /home/foible/Dots/git-prompt.zsh /home/foible/.config/zsh/custom/git-prompt.zsh ;
+ ln -s /home/foible/dot/bspwmrc /home/foible/.config/bspwm/bspwmrc ;
+ ln -s /home/foible/dot/sxhkdrc /home/foible/.config/sxhkd/sxhkdrc ;
+ ln -s /home/foible/dot/tint2rc /home/foible/.config/tint2/tint2rc ;
+ ln -s /home/foible/dot/compton.conf /home/foible/.config/compton.conf ;
+ ln -s /home/foible/dot/rc.conf /home/foible/.config/ranger/rc.conf ;
+ ln -s /home/foible/dot/scope.sh /home/foible/.config/ranger/scope.sh ;
+ ln -s /home/foible/dot/rifle.conf /home/foible/.config/ranger/rifle.conf ;
+ ln -s /home/foible/dot/aliases.zsh /home/foible/.config/zsh/custom/aliases.zsh ;
+ ln -s /home/foible/dot/git-prompt.zsh /home/foible/.config/zsh/custom/git-prompt.zsh ;
 

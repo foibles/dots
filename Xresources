@@ -42,7 +42,7 @@ URxvt*scrollBar:                        false
 ! URxvt*shading:                        number
 ! URxvt*blurRadius:                     HxV
 URxvtDesktop*fading:                    0
-URxvt*fading:                           40
+URxvt*fading:                           0
 !URxvt*fadeColor:                        #002b36
 ! URxvt*utmpInhibit:                    boolean
 ! URxvt*urgentOnBell:                   boolean
@@ -58,7 +58,16 @@ URxvt*pointerBlank:                     true
 ! yuri - solarized colors for both urxvt and xterm
 !      - true transparency supported by urxvt
 !      - use [alpha]#rrggbb format
-URxvt*background:                       [85]#002b36
+!
+!      solarized
+! URxvt*background:                       [85]#002b36
+!
+! dark
+URxvt*background:                       [85]#282828
+!
+!black
+!URxvt*background:                       #000000
+
 URxvtDesktop*background:                [0]#002b36
 XTerm*background:                       #002b36
 XTerm*foreground:                       #839496

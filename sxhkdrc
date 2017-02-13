@@ -2,6 +2,14 @@
 {XF86PowerOff}
     systemctl poweroff
 
+# mount iphone to /media/iphone
+super + p
+  ifuse /media/iphone
+
+# unmount iphone
+super + o
+  fusermount -u /media/iphone
+
 # umount media
 Insert
   umount.sh
@@ -19,11 +27,20 @@ super + z
 
 # browser
 super + b
-    google-chrome-stable
+    qutebrowser
+
+# youtube
+super + y
+      gtk-youtube-viewer
+
+ # image browser
+super + i
+       gthumb
+
 
 # google keep
-super + k
-  google-chrome-stable --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
+# super + k
+# google-chrome-stable --app-id=hmjkmjkepdijhoojdojkdfohbdgmmhki
 
 
 # close window
@@ -35,7 +52,7 @@ super + e
 	urxvt -e ranger
 
 # launch vim
-supet + v
+super + v
 	urxvt -e vim
 
 # program launcher
@@ -100,18 +117,18 @@ F12
 
 # show acpi output (battery status)
 super + a
-    notify-send -t 5000 "`acpi`"
+    ~/bin/acpi.sh
 
 # show current date/time
 super + d
-    notify-send -t 5000 "`date +'%H:%M   %a, %d %b %Y'`"
+    ~/bin/date.sh
 
 # close/kill window
 super + w
 	bspc window -c
 
-# insync status
-super + i
+# cloud status
+super + c
     insync get_status | xargs -0 notify-send  
 
 # show output of periodically run update-checking script
