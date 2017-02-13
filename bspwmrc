@@ -62,7 +62,7 @@ tint2 &
 redshift &
 
 # google drive sync
-insync start &
+# insync start &
 
 
 # seems as if split_ratio takes effect for all desktops
