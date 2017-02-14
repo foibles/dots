@@ -1,2 +1,2 @@
 #!/bin/sh
-feh  --bg-scale '/home/foible/elephant.jpg' 
+feh  --bg-scale '/home/foible/syn/dot/elephant.jpg' 

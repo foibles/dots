@@ -1,4 +1,4 @@
- mkdir /home/foible/.old-dots ;
+ mkdir -p /home/foible/.old-dots ;
  mkdir -p /home/foible/.config/zsh/custom ;
  mkdir -p /home/foible/.config/ranger ;
  mkdir -p /home/foible/.config/tint2 ;
@@ -19,8 +19,6 @@
  mv /home/foible/.zshrc /home/foible/.old-dots/.zshrc ;
 
   # move old configs
- mv /home/foible/.config/qutebrowser/bookmarks /home/foible/.old-do    ts/bookmarks ;
- mv /home/foible/.config/qutebrowser/qutebrowser.conf /home/foible/.old-dots/qutebrowser.conf ;
  mv /home/foible/.config/youtube-viewer/gtk-youtube-viewer.conf /home/foible/.old-dots/gtk-youtube-viewer.conf ;
  mv /home/foible/.config/youtube-viewer/youtube_users.txt /home/foible/.old-dots/youtube_users.txt ;
  mv /home/foible/.config/youtube-viewer/  /home/foible/.old-dots/ ;
@@ -35,29 +33,26 @@
  mv /home/foible/.config/zsh/custom/git-prompt.zsh /home/foible/.old-dots/git-prompt.zsh ;
 
  # symlink new dots
- ln -s /home/foible/Dots/zprofile /home/foible/.zprofile ;
- ln -s /home/foible/Dots/bashrc /home/foible/.bashrc ;
- ln -s /home/foible/Dots/fehbg /home/foible/.fehbg ;
- ln -s /home/foible/Dots/gitignore /home/foible/.gitignore ;
- ln -s /home/foible/Dots/vimrc /home/foible/.vimrc ;
- ln -s /home/foible/Dots/xinitrc /home/foible/.xinitrc ;
- ln -s /home/foible/Dots/Xresources /home/foible/.Xresources ;
- ln -s /home/foible/Dots/profile /home/foible/.profile ;
- ln -s /home/foible/Dots/zshrc /home/foible/.zshrc ;
+ ln -s /home/foible/syn/dot/zprofile /home/foible/.zprofile ;
+ ln -s /home/foible/syn/dot/bashrc /home/foible/.bashrc ;
+ ln -s /home/foible/syn/dot/fehbg /home/foible/.fehbg ;
+ ln -s /home/foible/syn/dot/gitignore /home/foible/.gitignore ;
+ ln -s /home/foible/syn/dot/vimrc /home/foible/.vimrc ;
+ ln -s /home/foible/syn/dot/xinitrc /home/foible/.xinitrc ;
+ ln -s /home/foible/syn/dot/Xresources /home/foible/.Xresources ;
+ ln -s /home/foible/syn/dot/profile /home/foible/.profile ;
+ ln -s /home/foible/syn/dot/zshrc /home/foible/.zshrc ;
 
  # symlink new configs
- ln -s /home/foible/Dots/bookmarks /home/foible/.config/qutebrowser/bookmarks
- ln -s /home/foible/Dots/qutebrowser.conf /home/foible/.config/qutebrowser/qutebrowser.conf
-
- ln -s /home/foible/Dots/gtk-youtube-viewer.conf /home/foible/.config/youtube-viewer/gtk-youtube-viewer.conf
- ln -s /home/foible/Dots/youtube_users.txt /home/foible/.config/youtube-viewer/youtube_users.txt 
- ln -s /home/foible/Dots/bspwmrc /home/foible/.config/bspwm/bspwmrc ;
- ln -s /home/foible/Dots/sxhkdrc /home/foible/.config/sxhkd/sxhkdrc ;
- ln -s /home/foible/Dots/tint2rc /home/foible/.config/tint2/tint2rc ;
- ln -s /home/foible/Dots/compton.conf /home/foible/.config/compton.conf ;
- ln -s /home/foible/Dots/rc.conf /home/foible/.config/ranger/rc.conf ;
- ln -s /home/foible/Dots/scope.sh /home/foible/.config/ranger/scope.sh ;
- ln -s /home/foible/Dots/rifle.conf /home/foible/.config/ranger/rifle.conf ;
- ln -s /home/foible/Dots/aliases.zsh /home/foible/.config/zsh/custom/aliases.zsh ;
- ln -s /home/foible/Dots/git-prompt.zsh /home/foible/.config/zsh/custom/git-prompt.zsh ;
+ ln -s /home/foible/syn/dot/gtk-youtube-viewer.conf /home/foible/.config/youtube-viewer/gtk-youtube-viewer.conf
+ ln -s /home/foible/syn/dot/youtube_users.txt /home/foible/.config/youtube-viewer/youtube_users.txt 
+ ln -s /home/foible/syn/dot/bspwmrc /home/foible/.config/bspwm/bspwmrc ;
+ ln -s /home/foible/syn/dot/sxhkdrc /home/foible/.config/sxhkd/sxhkdrc ;
+ ln -s /home/foible/syn/dot/tint2rc /home/foible/.config/tint2/tint2rc ;
+ ln -s /home/foible/syn/dot/compton.conf /home/foible/.config/compton.conf ;
+ ln -s /home/foible/syn/dot/rc.conf /home/foible/.config/ranger/rc.conf ;
+ ln -s /home/foible/syn/dot/scope.sh /home/foible/.config/ranger/scope.sh ;
+ ln -s /home/foible/syn/dot/rifle.conf /home/foible/.config/ranger/rifle.conf ;
+ ln -s /home/foible/syn/dot/aliases.zsh /home/foible/.config/zsh/custom/aliases.zsh ;
+ ln -s /home/foible/syn/dot/git-prompt.zsh /home/foible/.config/zsh/custom/git-prompt.zsh ;
 
